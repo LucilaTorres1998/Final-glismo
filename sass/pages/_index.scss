@@ -1,0 +1,550 @@
+/* NAV-BAR */
+
+.bg-purple{
+    background-color: rgb(199, 187, 209);
+  }
+  
+  nav, .navbar-brand{
+    width: 100%;
+    flex: 1 0 50px; 
+    color: rgba(202, 180, 180, 0.747); 
+    font-size: $size *4;
+    padding: $size * 2;
+  }
+
+  .dropdown-menu li{
+      font-size: 20px;
+ }
+
+ /* HERO */
+
+.padre1{
+    margin-top: 50px;
+    display: grid; 
+    place-items: center; 
+    height: 100vh; 
+    background-image:url(../multimedia/sdvdfz.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;  
+  }
+  
+  .hijo1 {
+
+    & h2 {
+        margin-top: 50px; 
+        text-align: center;
+        font-family: $chela;
+        font-size: $size * 12;
+        letter-spacing: 2px;
+        color: rgb(255, 255, 255);
+    }
+  
+    & p{
+        font-family: $roboto;
+        font-size: $size * 5;
+        color: rgb(255, 255, 255); 
+        background-color: #413f4242;  
+    }
+
+}
+
+/* INSTRUCCIONES */
+.instrucciones{
+    background-color: $bg-color;
+  
+    & .carta{
+        background-color: #f07b1ca1; 
+        display: flex; 
+        flex-direction: column; 
+        text-align: center; 
+        padding: 5 1px;
+        margin-top: $size * 4;
+        margin-bottom: $size * 4;
+        border-radius: 8px;
+    }
+
+    & h3{
+       color:rgba(255, 255, 255, 0.747);
+       font-family: $roboto;
+        padding-bottom: 1px;
+        font-size: $size * 6;
+    }
+
+    & p{
+        color: rgba(255, 255, 255, 0.747);
+        font-family: $roboto; 
+        padding-bottom: 1px;
+        font-size: $size * 4;
+    }
+
+  .carta img{
+   width: 80%;
+   margin-top: $size * 5;  
+  }
+
+}
+
+/* DESTINOS hover */
+
+.imagen-opc{
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba (0, 0, 0, .9);
+    border-radius: 8px;
+
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    & h3{
+        color: white;
+        font-family: $roboto;
+    }
+    }
+    
+    
+    .hover-galeria{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      background: rgba(59, 5, 104, 0.815);
+      transform: scale(0);
+      transition: transform .5s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: rgba(255, 255, 255, 0.856);
+      top:0%;
+
+
+      & a{
+        text-decoration: none;
+        font-size: $size *7;
+        color: $naranja-textos;
+        font-family: $roboto;
+      }
+    }
+   
+
+   
+    
+    
+    .imagen-opc:hover .hover-galeria{
+      transform: scale(1);
+    }
+    
+    /* DESTINOS cartas */
+    .servicios{
+      background-image: url(../multimedia/puerto-madero-noche3.jpg);
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover; 
+      padding: $size * 6;
+
+      & h2{
+        font-family: $chela;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.747); 
+        font-size: 50px;
+        padding: 15px 10px;
+      }
+
+      & .carta{
+        background-color: rgba(199, 187, 209, 0.815);
+        padding: 1rem; 
+        margin: $size;
+        text-align: center; 
+        border-radius: $size;
+      }
+
+      & h3{
+        text-align: center;
+        color: rgb(63, 56, 56); 
+        font-family: $chela;
+        font-size: $size * 6;
+        margin: $size * 2;
+      }
+    }
+    
+    .carta img{
+    width: 100%;
+    height: 250px;
+    margin-top: 1px; 
+    border-radius: $size; 
+    }
+
+     
+    /* FOOTER */
+
+.footer{
+    width: 100%;
+    height: 60px;
+    color: #353232;
+  }
+  
+  .container-body{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: rgb(199, 187, 209);
+
+
+    & h2{
+        font-family: $chela;
+        font-size: $size * 6;
+        width: 100%;
+        padding: 5px;
+        color: black;  
+    }
+  }
+  
+  
+  .seguinos img{
+    cursor: pointer;
+    size: $size * 4;
+  }
+  
+  .container-footer{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: #353232;
+    color:black;
+
+    & h3 {
+      font-family: $roboto;
+      color: $blanco-textos;
+      font-size: $size *4;
+      padding-top: 10px;
+    }
+
+    & .informacion{
+        width: 100%;
+        font-family: $roboto;
+        text-align: center;
+        background-color: #353232;
+        color:black;
+        font-size: $size *3;
+    }
+
+    & a{
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+
+/* DESTINO ELEGIDO */
+
+.descripcion{
+
+  & h2{
+      text-align: center;
+      font-family: $chela;
+      padding-top: $size *2;
+      font-size: $size * 9;
+      color: $naranja-textos; 
+  }
+
+  & p{
+    font-family: $roboto;
+    font-size: 18px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.textos{
+
+  & .info {
+    & h3{
+      text-align: left;
+      font-family: $chela;
+      font-size: $size * 5;
+      padding-top: $size *8;
+      margin-left: $size*7;
+      color: $gris-textos;
+    }
+
+    & li{
+        list-style: none;
+        font-family: $roboto;
+        font-size: 16px;
+        margin-left: $size*7;
+    }
+  }
+
+  & .como-llegar{
+    padding-bottom: $size *6;
+
+    & h3{
+      text-align: left;
+      font-family: $chela;
+      font-size: $size * 5;
+      padding-top: $size *4;
+      margin-left: $size*7;
+      padding-left: $size *4;
+      color: $gris-textos;
+    }
+
+    & li{
+      font-family: $roboto;
+      font-size: 16px;
+      margin-left: $size*7;
+    }
+  }
+}
+  
+  
+  .mapa iframe{
+    position: relative;
+    margin-top: $size *9;
+    margin-bottom: $size *4;
+    margin-left: 50px;
+  }
+
+/* cartas otras opciones */
+    .servicios1{
+      background-color: rgb(199, 187, 209);
+      padding: $size * 4;
+
+      & h2{
+        font-family: $chela;
+        text-align: center;
+        color: $gris-textos; 
+        font-size: 50px;
+        padding: 10px;
+      }
+
+      & .carta{
+        background-color: $bg-color;
+        padding: 1rem; 
+        margin: $size;
+        text-align: center; 
+        border-radius: $size;
+      }
+
+      & h3{
+        text-align: center;
+        color: rgb(63, 56, 56); 
+        font-family: $chela;
+        font-size: $size * 6;
+        margin: $size * 2;
+      }
+    }
+
+
+/* INFORMACIÓN */
+
+.menu-info{
+  background-color: rgb(199, 187, 209);
+  margin-top: 63px;
+  padding-top: $size *3;
+  padding-bottom: $size *3;
+
+  & .carta{
+    display: flex; 
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  & h3{
+    color:$gris-textos;
+    font-family: $chela;
+    text-align: center;
+    font-size: $size * 10;
+  }
+
+  & h2{
+  color:$gris-textos;
+  font-family: $roboto;
+  text-align: center;
+  font-size: 20px;
+  }
+
+  & .carta img{
+  width: 40%; 
+  padding-bottom: 1px; 
+  max-width: 100%;
+  }
+}
+
+/* -nros- */
+.informacion{
+  @include backgroung-and-size($bg-color, 5px);
+
+    & .carta{
+        margin-top: 20px;
+    }
+
+    & img{
+        margin-top: $size * 10;
+        width: 100%;
+        height: 300px;
+        max-width: 100%;
+    }
+
+    & h3{
+      @include size-font-margin-padding();
+        color: $naranja-textos;
+    }
+
+    & li{
+        font-family: $roboto;
+        color: $naranja-textos;
+        font-size: 18px;
+    }
+  }
+  
+  /* -clima- */
+  .clima{
+    @include backgroung-and-size($bg-color, 5px);
+
+
+    & h3{
+      @include size-font-margin-padding();
+        color: $naranja-textos; 
+    }
+
+    & li{
+        font-family: $roboto;
+        color: $naranja-textos;
+        padding-bottom: $size * 2; 
+        font-size: 18px;
+    }
+
+    & img{
+      width: 100%;
+      height: 300px;
+      max-width: 100%;
+    }
+  }
+  
+  /* -turista- */
+  .turista{
+    @include backgroung-and-size($bg-color, 5px);
+
+    & img{
+      width: 100%;
+      height: 300px;
+      max-width: 100%;
+    }
+
+    & h3{
+      @include size-font-margin-padding();
+        color: $naranja-textos;  
+    }
+
+    & li{
+        font-family: $roboto;
+        color: $naranja-textos;
+        font-size: 18px;
+
+        & .apps{
+            list-style: none;
+        }
+    }
+  } 
+  
+  /* -sube- */
+  .sube{
+    @include backgroung-and-size($bg-color, 5px);
+
+    & img{
+      width: 100%;
+      height: 450px;
+      max-width: 100%;
+    }
+
+    & h3{
+      @include size-font-margin-padding();
+        color: $naranja-textos;
+    }
+
+    & p{
+        font-family: $roboto;
+        color: $naranja-textos;
+        font-size: 18px;
+        padding-bottom: $size * 6;
+    }
+
+    & h4{
+        font-family: $chela;
+        font-size: 25px;
+    }
+
+    & li{
+        font-family: $roboto;
+        color: $naranja-textos;
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+  }
+
+  /* CONTACTO */
+
+/* form */
+.contacto{
+    background-color:  rgb(192, 184, 199);
+    padding: $size * 4;
+  }
+  form{
+    width: 450px;
+    margin: auto;
+    background: $naranja-textos;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    margin-top: 90px;
+    margin-bottom: $size * 4;
+    border-radius: 7px;
+  }
+  
+  h2{
+    color: white;
+    font-family: $chela;
+    text-align: center;
+    margin: 0%;
+    font-size: $size * 6;
+    margin-bottom: $size * 2;
+  }
+  
+  h3{
+    color: white;
+    margin: 0%;
+    font-size: $size * 4;
+    margin-bottom: $size * 2;
+  }
+  
+  input, textarea{
+    width: 100%;
+    margin-bottom: $size * 2;
+    padding: 7px;
+    box-sizing: border-box;
+    border: none;
+  }
+  
+  textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  
+  #boton{
+    background-color: $lila-textos;
+    border: none;
+    padding: $size * 2;
+  
+  }
+  
+  #boton:hover{
+    cursor: pointer;
+  }
+  

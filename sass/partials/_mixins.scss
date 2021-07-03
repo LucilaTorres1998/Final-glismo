@@ -1,0 +1,14 @@
+@mixin backgroung-and-size ($bg-color, $size) { 
+    background-color: $bg-color;
+    font-size: $size;
+    padding: $size * 10;
+  }
+  
+  @mixin size-font-margin-padding  {
+    font-family: $chela;
+    font-size: 30px;
+    font-weight: 600px;
+    margin-top: $size * 10;
+    width: 100%;
+    padding: 5px;
+  }

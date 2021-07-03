@@ -1,0 +1,594 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Chela+One&family=Roboto:wght@400;500&display=swap");
+/* fonts */
+* {
+  margin: 0;
+  padding: 0%;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #e4e4e4;
+}
+
+/* NAV-BAR */
+.bg-purple {
+  background-color: #c7bbd1;
+}
+
+nav, .navbar-brand {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50px;
+          flex: 1 0 50px;
+  color: rgba(202, 180, 180, 0.747);
+  font-size: 20px;
+  padding: 10px;
+}
+
+.dropdown-menu li {
+  font-size: 20px;
+}
+
+/* HERO */
+.padre1 {
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-image: url(../multimedia/sdvdfz.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hijo1 h2 {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Chela One", cursive;
+  font-size: 60px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.hijo1 p {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  color: white;
+  background-color: #413f4242;
+}
+
+/* INSTRUCCIONES */
+.instrucciones {
+  background-color: #e4e4e4;
+}
+
+.instrucciones .carta {
+  background-color: #f07b1ca1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 5 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.instrucciones h3 {
+  color: rgba(255, 255, 255, 0.747);
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 1px;
+  font-size: 30px;
+}
+
+.instrucciones p {
+  color: rgba(255, 255, 255, 0.747);
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 1px;
+  font-size: 20px;
+}
+
+.instrucciones .carta img {
+  width: 80%;
+  margin-top: 25px;
+}
+
+/* DESTINOS hover */
+.imagen-opc {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 6px 0 rgba 0, 0, 0, 0.9;
+          box-shadow: 0 0 6px 0 rgba 0, 0, 0, 0.9;
+  border-radius: 8px;
+}
+
+.imagen-opc img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.imagen-opc h3 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.hover-galeria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  background: rgba(59, 5, 104, 0.815);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: rgba(255, 255, 255, 0.856);
+  top: 0%;
+}
+
+.hover-galeria a {
+  text-decoration: none;
+  font-size: 35px;
+  color: #ec8937;
+  font-family: "Roboto", sans-serif;
+}
+
+.imagen-opc:hover .hover-galeria {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+/* DESTINOS cartas */
+.servicios {
+  background-image: url(../multimedia/puerto-madero-noche3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+.servicios h2 {
+  font-family: "Chela One", cursive;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.747);
+  font-size: 50px;
+  padding: 15px 10px;
+}
+
+.servicios .carta {
+  background-color: rgba(199, 187, 209, 0.815);
+  padding: 1rem;
+  margin: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.servicios h3 {
+  text-align: center;
+  color: #3f3838;
+  font-family: "Chela One", cursive;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.carta img {
+  width: 100%;
+  height: 250px;
+  margin-top: 1px;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  height: 60px;
+  color: #353232;
+}
+
+.container-body {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #c7bbd1;
+}
+
+.container-body h2 {
+  font-family: "Chela One", cursive;
+  font-size: 30px;
+  width: 100%;
+  padding: 5px;
+  color: black;
+}
+
+.seguinos img {
+  cursor: pointer;
+  size: 20px;
+}
+
+.container-footer {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  background-color: #353232;
+  color: black;
+}
+
+.container-footer h3 {
+  font-family: "Roboto", sans-serif;
+  color: rgba(255, 255, 255, 0.747);
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.container-footer .informacion {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background-color: #353232;
+  color: black;
+  font-size: 15px;
+}
+
+.container-footer a {
+  width: 100%;
+  font-size: 12px;
+}
+
+/* DESTINO ELEGIDO */
+.descripcion h2 {
+  text-align: center;
+  font-family: "Chela One", cursive;
+  padding-top: 10px;
+  font-size: 45px;
+  color: #ec8937;
+}
+
+.descripcion p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.textos .info h3 {
+  text-align: left;
+  font-family: "Chela One", cursive;
+  font-size: 25px;
+  padding-top: 40px;
+  margin-left: 35px;
+  color: #3f3838;
+}
+
+.textos .info li {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin-left: 35px;
+}
+
+.textos .como-llegar {
+  padding-bottom: 30px;
+}
+
+.textos .como-llegar h3 {
+  text-align: left;
+  font-family: "Chela One", cursive;
+  font-size: 25px;
+  padding-top: 20px;
+  margin-left: 35px;
+  padding-left: 20px;
+  color: #3f3838;
+}
+
+.textos .como-llegar li {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin-left: 35px;
+}
+
+.mapa iframe {
+  position: relative;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+/* cartas otras opciones */
+.servicios1 {
+  background-color: #c7bbd1;
+  padding: 20px;
+}
+
+.servicios1 h2 {
+  font-family: "Chela One", cursive;
+  text-align: center;
+  color: #3f3838;
+  font-size: 50px;
+  padding: 10px;
+}
+
+.servicios1 .carta {
+  background-color: #e4e4e4;
+  padding: 1rem;
+  margin: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.servicios1 h3 {
+  text-align: center;
+  color: #3f3838;
+  font-family: "Chela One", cursive;
+  font-size: 30px;
+  margin: 10px;
+}
+
+/* INFORMACIÓN */
+.menu-info {
+  background-color: #c7bbd1;
+  margin-top: 63px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.menu-info .carta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.menu-info h3 {
+  color: #3f3838;
+  font-family: "Chela One", cursive;
+  text-align: center;
+  font-size: 50px;
+}
+
+.menu-info h2 {
+  color: #3f3838;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.menu-info .carta img {
+  width: 40%;
+  padding-bottom: 1px;
+  max-width: 100%;
+}
+
+/* -nros- */
+.informacion {
+  background-color: #e4e4e4;
+  font-size: 5px;
+  padding: 50px;
+}
+
+.informacion .carta {
+  margin-top: 20px;
+}
+
+.informacion img {
+  margin-top: 50px;
+  width: 100%;
+  height: 300px;
+  max-width: 100%;
+}
+
+.informacion h3 {
+  font-family: "Chela One", cursive;
+  font-size: 30px;
+  font-weight: 600px;
+  margin-top: 50px;
+  width: 100%;
+  padding: 5px;
+  color: #ec8937;
+}
+
+.informacion li {
+  font-family: "Roboto", sans-serif;
+  color: #ec8937;
+  font-size: 18px;
+}
+
+/* -clima- */
+.clima {
+  background-color: #e4e4e4;
+  font-size: 5px;
+  padding: 50px;
+}
+
+.clima h3 {
+  font-family: "Chela One", cursive;
+  font-size: 30px;
+  font-weight: 600px;
+  margin-top: 50px;
+  width: 100%;
+  padding: 5px;
+  color: #ec8937;
+}
+
+.clima li {
+  font-family: "Roboto", sans-serif;
+  color: #ec8937;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.clima img {
+  width: 100%;
+  height: 300px;
+  max-width: 100%;
+}
+
+/* -turista- */
+.turista {
+  background-color: #e4e4e4;
+  font-size: 5px;
+  padding: 50px;
+}
+
+.turista img {
+  width: 100%;
+  height: 300px;
+  max-width: 100%;
+}
+
+.turista h3 {
+  font-family: "Chela One", cursive;
+  font-size: 30px;
+  font-weight: 600px;
+  margin-top: 50px;
+  width: 100%;
+  padding: 5px;
+  color: #ec8937;
+}
+
+.turista li {
+  font-family: "Roboto", sans-serif;
+  color: #ec8937;
+  font-size: 18px;
+}
+
+.turista li .apps {
+  list-style: none;
+}
+
+/* -sube- */
+.sube {
+  background-color: #e4e4e4;
+  font-size: 5px;
+  padding: 50px;
+}
+
+.sube img {
+  width: 100%;
+  height: 450px;
+  max-width: 100%;
+}
+
+.sube h3 {
+  font-family: "Chela One", cursive;
+  font-size: 30px;
+  font-weight: 600px;
+  margin-top: 50px;
+  width: 100%;
+  padding: 5px;
+  color: #ec8937;
+}
+
+.sube p {
+  font-family: "Roboto", sans-serif;
+  color: #ec8937;
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+
+.sube h4 {
+  font-family: "Chela One", cursive;
+  font-size: 25px;
+}
+
+.sube li {
+  font-family: "Roboto", sans-serif;
+  color: #ec8937;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+/* CONTACTO */
+/* form */
+.contacto {
+  background-color: #c0b8c7;
+  padding: 20px;
+}
+
+form {
+  width: 450px;
+  margin: auto;
+  background: #ec8937;
+  padding: 30px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+}
+
+h2 {
+  color: white;
+  font-family: "Chela One", cursive;
+  text-align: center;
+  margin: 0%;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: white;
+  margin: 0%;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#boton {
+  background-color: #b189d1;
+  border: none;
+  padding: 10px;
+}
+
+#boton:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
