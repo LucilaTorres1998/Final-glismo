@@ -535,8 +535,8 @@ nav, .navbar-brand {
 /* CONTACTO */
 /* form */
 .contacto {
-  background-color: #c0b8c7;
   padding: 20px;
+  background-image: url(../multimedia/portadas/floralis-generica/2.jpg);
 }
 
 form {

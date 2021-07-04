@@ -493,10 +493,10 @@
 
 /* form */
 .contacto{
-    background-color:  rgb(192, 184, 199);
-    padding: $size * 4;
-  }
-  form{
+  padding: $size * 4;
+  background-image: url(../multimedia/portadas/floralis-generica/2.jpg);
+}
+form{
     width: 450px;
     margin: auto;
     background: $naranja-textos;
