@@ -37,14 +37,13 @@
         font-family: $chela;
         font-size: $size * 12;
         letter-spacing: 2px;
-        color: rgb(255, 255, 255);
+        color: white;
     }
   
     & p{
         font-family: $roboto;
         font-size: $size * 5;
-        color: rgb(255, 255, 255); 
-        background-color: #413f4242;  
+        color: rgb(255, 255, 255);   
     }
 
 }
@@ -494,8 +493,9 @@
 /* form */
 .contacto{
   padding: $size * 4;
-  background-image: url(../multimedia/portadas/floralis-generica/2.jpg);
+background-image: url(../multimedia/portadas/floralis-generica/2.jpg); 
 }
+
 form{
     width: 450px;
     margin: auto;
